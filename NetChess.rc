@@ -1,0 +1,557 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\NetChess.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\LDAPExplorer.ico"
+IDR_NETCHETYPE          ICON    DISCARDABLE     "res\\NetChessDoc.ico"
+IDI_ICON_MAINFRAME_OPPOSITE ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_BASE         BITMAP  DISCARDABLE     "res\\base.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_VIEW_HIDE
+    BUTTON      ID_EDIT_START
+    BUTTON      ID_EDIT_STOP
+    BUTTON      ID_APP_ABOUT
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      ID_FILE_SAVE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+    BUTTON      AFX_ID_PREVIEW_CLOSE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "Skill &Level\tCtrl-L",        ID_EDIT_LEVEL
+        MENUITEM "Start\tCtrl+S",               ID_EDIT_START
+        MENUITEM "Stop\tCtrl+T",                ID_EDIT_STOP
+        POPUP "&Color"
+        BEGIN
+            MENUITEM "&Snake Color",                ID_EDIT_COLOR_SNAKECOLOR
+            MENUITEM "&Food color",                 ID_EDIT_COLOR_FOODCOLOR
+            MENUITEM "&Background color",           ID_EDIT_COLOR_BACKGROUNDCOLOR
+
+            MENUITEM "B&ar color",                  ID_EDIT_COLOR_BARCOLOR
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Hide\tCtrl+H",               ID_VIEW_HIDE
+        MENUITEM "&Score",                      ID_VIEW_SCORE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Snakes ...",           ID_APP_ABOUT
+        MENUITEM "&How to play",                ID_HELP_HOWTOPLAY
+    END
+END
+
+IDR_SHELL_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "&Shell"
+    BEGIN
+        MENUITEM "&Close",                      ID_SHELL_CLOSE
+        MENUITEM "&View",                       ID_SHELL_VIEW
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "H",            ID_VIEW_HIDE,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_EDIT_START,          VIRTKEY, CONTROL, NOINVERT
+    "T",            ID_EDIT_STOP,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 183, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_CLIENTEDGE
+CAPTION "About Snakes"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,7,20,20
+    LTEXT           "Snakes Version 1.0",IDC_STATIC,34,10,90,8,SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,126,7,50,14,WS_GROUP
+    LTEXT           "Developed by A.V.M.Rao",IDC_STATIC,34,31,142,8
+    LTEXT           "Send your suggessions or comments to raoavm@yahoo.com",
+                    IDC_STATIC,34,50,123,35
+END
+
+IDD_DISKS DIALOG DISCARDABLE  0, 0, 168, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "level"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,154,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,154,50,14
+    CONTROL         "Skill Level  1",IDC_RADIO_1,"Button",BS_AUTORADIOBUTTON,
+                    47,24,51,10
+    CONTROL         "Skill Level  3",IDC_RADIO_3,"Button",BS_AUTORADIOBUTTON,
+                    47,53,59,10
+    CONTROL         "Skill Level  2",IDC_RADIO_2,"Button",BS_AUTORADIOBUTTON,
+                    47,38,57,10
+    CONTROL         "Skill Level  4",IDC_RADIO_4,"Button",BS_AUTORADIOBUTTON,
+                    47,68,51,10
+    CONTROL         "Skill Level  5",IDC_RADIO_5,"Button",BS_AUTORADIOBUTTON,
+                    47,84,59,10
+    CONTROL         "Skill Level  6",IDC_RADIO_6,"Button",BS_AUTORADIOBUTTON,
+                    47,99,59,10
+    GROUPBOX        "Skill Level",IDC_STATIC,26,11,102,113
+    CONTROL         "Skill Level  7",IDC_RADIO_7,"Button",BS_AUTORADIOBUTTON,
+                    47,113,59,10
+    LTEXT           "Game Level",IDC_STATIC,27,133,47,8
+    EDITTEXT        IDC_EDIT_GAME_LEVEL,85,130,40,14,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_SCORE DIALOG DISCARDABLE  0, 0, 208, 183
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Top 10"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,73,162,50,14
+    LTEXT           "Name",IDC_STATIC,81,7,20,8
+    LTEXT           "Score",IDC_STATIC,146,7,20,8
+    LTEXT           "",IDC_STATIC_NAME1,62,30,53,8
+    LTEXT           "",IDC_STATIC_SCORE1,146,29,55,8
+    LTEXT           "Rank",IDC_STATIC,32,7,18,8
+    LTEXT           "1",IDC_STATIC_RANK1,32,29,8,8
+    LTEXT           "",IDC_STATIC_NAME2,62,42,53,8
+    LTEXT           "",IDC_STATIC_SCORE2,146,42,55,8
+    LTEXT           "2",IDC_STATIC_RANK2,32,42,8,8
+    LTEXT           "",IDC_STATIC_NAME3,62,56,53,8
+    LTEXT           "",IDC_STATIC_SCORE3,146,56,55,8
+    LTEXT           "3",IDC_STATIC_RANK3,32,56,8,8
+    LTEXT           "",IDC_STATIC_NAME4,62,68,53,8
+    LTEXT           "",IDC_STATIC_SCORE4,146,68,55,8
+    LTEXT           "4",IDC_STATIC__RANK4,32,68,8,8
+    LTEXT           "",IDC_STATIC_NAME5,62,81,53,8
+    LTEXT           "",IDC_STATIC_SCORE5,146,81,55,8
+    LTEXT           "5",IDC_STATIC__RANK5,32,81,8,8
+    LTEXT           "",IDC_STATIC__NAME6,62,95,53,8
+    LTEXT           "",IDC_STATIC_SCORE6,146,95,55,8
+    LTEXT           "6",IDC_STATIC__RANK6,32,95,8,8
+    LTEXT           "",IDC_STATIC__NAME7,62,108,53,8
+    LTEXT           "",IDC_STATIC_SCORE7,146,108,55,8
+    LTEXT           "7",IDC_STATIC__RANK7,32,108,8,8
+    LTEXT           "",IDC_STATIC__NAME8,62,121,53,8
+    LTEXT           "",IDC_STATIC_SCORE8,146,121,55,8
+    LTEXT           "8",IDC_STATIC__RANK8,32,121,8,8
+    LTEXT           "",IDC_STATIC__NAME9,62,135,53,8
+    LTEXT           "",IDC_STATIC_SCORE9,146,136,55,8
+    LTEXT           "9",IDC_STATIC__RANK9,32,135,8,8
+    LTEXT           "",IDC_STATIC__NAME10,62,148,53,8
+    LTEXT           "",IDC_STATIC_SCORE10,146,148,55,8
+    LTEXT           "10",IDC_STATIC__RANK10,32,148,8,8
+END
+
+IDD_DIALOG_NEW_SCORE DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New score"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,68,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,107,68,50,14
+    LTEXT           "Name",IDC_STATIC,33,20,20,8
+    LTEXT           "Score",IDC_STATIC,33,44,20,8
+    EDITTEXT        IDC_EDIT_NAME,95,17,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SCORE,95,38,73,14,ES_AUTOHSCROLL | ES_READONLY
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Tower of Hanoi  MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "KnightsTour\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "KTour.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Tower of Hanoi  Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 176
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DISKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 161
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_DIALOG_NEW_SCORE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_NETCHESS            REGISTRY DISCARDABLE    "NetChess.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Snakes by A.V.M.Rao\nSnakes\nSnakes\n\n\nKnightsTour.Document\nKnightsTou Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Snakes by A.V.M.Rao"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new game\nNew"
+    ID_FILE_OPEN            "Open an existing game\nOpen"
+    ID_FILE_CLOSE           "Close the game\nClose"
+    ID_FILE_SAVE            "Save the playing game\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HIDE            "Hide the current active window\nHide"
+    ID_EDIT_OPTIONS         "Select board color\nOptions"
+    ID_VIEW_NUMBER          "Show or hide board numbers\nNumber"
+    ID_VIEW_LETTER          "show or hide board letters\nLetter"
+    ID_FILE_SAVEHISTORY     "Save History\nSave History"
+    ID_TOOLS_PLAYHISTORY    "Play history\nPlay History"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_HISTORY         "Show history of playing game\nHistory"
+    ID_TOOLS_WHITEONTOP     "Change the piece side\nWhite On Top"
+    ID_EDIT_MOVEFIRST       "Move to Beginning of the game\nMove First"
+    ID_EDIT_MOVELAST        "Move to the End of the game\nMove Last"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_PROPERTIES      "Displays about the client/server information"
+    ID_FILE_FEED            "Feed chess game\nFeed"
+    ID_EDIT_SETBOARD        "set the chess board manually\nSet Board"
+    ID_EDIT_LEVEL           "Select the Skill Level"
+    ID_EDIT_START           "Start the game"
+    ID_EDIT_STOP            "Stop the game"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COLOR_SNAKECOLOR "Set snake color"
+    ID_EDIT_COLOR_FOODCOLOR "Set food color"
+    ID_EDIT_COLOR_BACKGROUNDCOLOR "Set background color"
+    ID_EDIT_COLOR_BARCOLOR  "Bar color"
+    ID_VIEW_SCORE           "View the socre"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\NetChess.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

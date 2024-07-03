@@ -1,0 +1,75 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NetChess - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/NetChess.res" /d "_DEBUG" "D:\avm\software\Snakes\NetChess.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP56.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/NetChess.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\avm\software\Snakes\ChessBoard.cpp"
+"D:\avm\software\Snakes\DisksDlg.cpp"
+"D:\avm\software\Snakes\History.cpp"
+"D:\avm\software\Snakes\MainFrm.cpp"
+"D:\avm\software\Snakes\MyColorDialog.cpp"
+"D:\avm\software\Snakes\NetChess.cpp"
+"D:\avm\software\Snakes\NetChessDoc.cpp"
+"D:\avm\software\Snakes\NetChessView.cpp"
+"D:\avm\software\Snakes\NewScore.cpp"
+"D:\avm\software\Snakes\Options.cpp"
+"D:\avm\software\Snakes\ScoreDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP56.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP57.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/NetChess.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\avm\software\Snakes\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP57.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP58.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Snakes.pdb" /debug /machine:I386 /out:"Debug/Snakes.exe" /pdbtype:sept 
+.\Debug\ChessBoard.obj
+.\Debug\DisksDlg.obj
+.\Debug\History.obj
+.\Debug\MainFrm.obj
+.\Debug\MyColorDialog.obj
+.\Debug\NetChess.obj
+.\Debug\NetChessDoc.obj
+.\Debug\NetChessView.obj
+.\Debug\NewScore.obj
+.\Debug\Options.obj
+.\Debug\ScoreDlg.obj
+.\Debug\StdAfx.obj
+.\Debug\NetChess.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1.PRA\LOCALS~1\Temp\RSP58.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+ChessBoard.cpp
+DisksDlg.cpp
+History.cpp
+MainFrm.cpp
+MyColorDialog.cpp
+NetChess.cpp
+NetChessDoc.cpp
+NetChessView.cpp
+NewScore.cpp
+Options.cpp
+ScoreDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Snakes.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

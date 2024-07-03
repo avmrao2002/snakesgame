@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		{4D831CBB-E39F-4963-A263-350743F69F11} = s 'NetChess'
+		'NetChess.EXE'
+		{
+			val AppID = s {4D831CBB-E39F-4963-A263-350743F69F11}
+		}
+	}
+}

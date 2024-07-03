@@ -1,0 +1,19 @@
+
+	// NetChess.idl : IDL source for NetChess.exe
+//
+// This file will be processed by the MIDL tool to
+// produce the type library (NetChess.tlb) and marshalling code.
+import "oaidl.idl";
+import "ocidl.idl";
+[
+	uuid(E438B35A-CECE-45F0-B5A3-285DD5F724CA),
+	version(1.0),
+	helpstring("NetChess 1.0 Type Library")
+]
+library NetChessLib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+};
+
+	
